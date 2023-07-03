@@ -40,6 +40,8 @@
 
     ];
 
+    $firstHotel = $hotels[0];
+
 ?>
 
 <!DOCTYPE html>
@@ -58,9 +60,9 @@
     <table class="table">
             <thead>
                     <tr>
-                        <?php foreach ($hotels as $hotel => $random) { ?>
+                        <?php foreach (array_keys($firstHotel) as $hotelKey) { ?>
                             <th scope="col">
-                                <?php echo (array_keys($hotel)); ?>
+                                <?php echo $hotelKey; ?>
                             </th>
                         <?php } ?>
                     </tr>
