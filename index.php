@@ -58,10 +58,9 @@
     <table class="table">
             <thead>
                     <tr>
-                        <?php foreach ($hotels as $hotel => $random) {
-                            ?>
+                        <?php foreach ($hotels as $hotel => $random) { ?>
                             <th scope="col">
-                            <?php echo print_r(array_keys($hotel)); ?>
+                                <?php echo (array_keys($hotel)); ?>
                             </th>
                         <?php } ?>
                     </tr>
